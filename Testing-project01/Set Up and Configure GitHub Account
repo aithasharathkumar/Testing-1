@@ -1,0 +1,57 @@
+Set Up and Configure GitHub Account
+
+
+Navigate to https://github.com/ and click on Sign up for GitHub. Enter the details and click on Create an account. 
+
+Execution:
+============================
+
+Step 1: generate SSH keys:
+
+Go to lab terminal
+
+# cd
+
+# ssh-keygen
+
+dont enter any thing.. just keep pressing enter for 3 times
+
+You key will generated
+
+The public key can be seen by exeucting below commad:
+
+# cat /root/.ssh/id_rsa.pub
+
+Step 2:
+
+Copy the key carefully
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7MWRf5oD4jXnFIvIfpZlBvUpb/fiR3WpFiAnZJZ7hYeD7G+WPKjQ5FaYTl7m6g+h4kSwa1VwyoMnjBm/+rdc3r1nVH+HujpBxa39+5tM0pYHFNP/UOc1dqWpOjAZlM3j5OuoTNvBZqZ+vvQ5XQGXHXlk5MtOjxO91rEOqpWuqYewXT9L535vprwavlOKKAEpIKKyNXCITSc4kTiLz9uSVS9utDEnByI9ohYK83DxGcPK2gNlie6vgaM9IdFeTRgJ+538QmzHiHAwAhcRcPBjIRCRisWWiRL6HpYs0e5l1Z1CtHwC2VAb4Ui5vXDmXSP/kPZtWGCEwsX6RLKmonZE7 root@ip-172-31-22-237
+
+Step 3: paste it on git hub
+
+Step 4: Create a remote repository
+
+
+
+
+========================================================
+Logging at local Git to connect with remote GitHub.
+
+
+git configurations:
+
+git config --global user.name sharath
+
+
+git config --global user.email sk@gmail.com
+
+
+=================================================
+git add origin  (ssh key)
+
+git push origin master
+
+
+
+
